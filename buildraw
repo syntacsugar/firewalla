@@ -68,7 +68,8 @@ function install_walla()
         NODE_MODULE_REPO=https://github.com/firewalla/firewalla_nodemodules.git
         git clone --recursive -b $branch --single-branch $NODE_MODULE_REPO $FW_NODE_MODULES_PATH
         cd $FW_NODE_MODULES_PATH
-        git reset -q --hard `cat $FIREWALLA_HOME/scripts/NODE_MODULES_REVISION.$CPU_PLATFORM`
+        #git reset -q --hard `cat $FIREWALLA_HOME/scripts/NODE_MODULES_REVISION.$CPU_PLATFORM`
+	#git reset -q --hard `cat $FIREWALLA_HOME/scripts/NODE_MODULES_REVISION`
         cd -
     fi
 
